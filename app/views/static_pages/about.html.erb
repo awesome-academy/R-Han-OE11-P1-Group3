@@ -1,2 +1,42 @@
-<h1>StaticPages#about</h1>
-<p>Find me in app/views/static_pages/about.html.erb</p>
+<div class="super_container">
+  <div class="menu_container menu_mm">
+    <div class="menu_close_container">
+      <div class="menu_close"></div>
+    </div>
+  </div>
+  <div class="home">
+    <div class="home_background_container prlx_parent">
+      <div class="home_background prlx" style="background-image">
+        <%= link_to image_tag("slider_background.jpg", alt: "") %>
+      </div>
+    </div>
+    <div class="home_content">
+      <h1>About us</h1>
+    </div>
+  </div>
+  <div class="aboutus">
+    <div class="about_title" align="center">About the University of Oxford</div>
+    <p class="about_text">Oxford is a world-leading centre of learning, teaching and research and the oldest university in the English-speaking world.</p>
+    <%= link_to image_tag("about.jpg", alt: "") %>
+    <div class="contact_info">
+      <ul>
+        <li class="contact_info_item">
+          <div class="contact_info_icon">
+          <%= link_to image_tag("placeholder.svg", alt: ""), "https://www.flaticon.com/authors/lucy-g"%>
+          </div>
+          Blvd Libertad, 34 m05200 Arévalos
+        </li>
+        <li class="contact_info_item">
+          <div class="contact_info_icon">
+            <%= link_to image_tag("smartphone.svg", alt: ""), "https://www.flaticon.com/authors/lucy-g"  %>
+          </div>
+          0034 37483 2445 322
+        </li>
+        <li class="contact_info_item">
+          <div class="contact_info_icon">
+            <%= link_to image_tag("envelope.svg", alt: ""), "https://www.flaticon.com/authors/lucy-g" %>
+          </div>hello@company.com
+        </li>
+      </ul>
+    </div>
+  </div>
