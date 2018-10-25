@@ -1,0 +1,72 @@
+<div class="super_container">
+  <div class="menu_container menu_mm">
+    <div class="menu_close_container">
+      <div class="menu_close"></div>
+    </div>
+  </div>
+  <div class="home">
+    <div class="home_background_container prlx_parent">
+      <div class="home_background prlx" style="background-image"><%= link_to image_tag("slider_background.jpg", alt: "") %></div>
+    </div>
+    <div class="home_content">
+      <h1><%= t ".login" %></h1>
+    </div>
+  </div>
+  <div class="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="contact_form">
+            <div class="contact_title"><%= t ".login" %></div>
+            <div class="contact_form_container">
+              <form action="post">
+                <input id="contact_form_name" class="input_field contact_form_name" type="text" placeholder="Username" required="required" data-error="Name is required.">
+                <input id="contact_form_email" class="input_field contact_form_email" type="email" placeholder="Password" required="required" data-error="Valid email is required.">
+                <input type="checkbox" checked="checked" name="remember"><%= t ".remember" %>
+                <button id="contact_send_btn" type="button" class="contact_send_btn trans_200" value="Submit"><%= t ".login" %></button>
+                 <span><%= t ".don't" %></span><%= link_to "register", register_path %></li>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="about">
+            <div class="about_title"><%= t ".join" %></div>
+            <p class="about_text"><%= t ".in" %></p>
+            <div class="contact_info">
+              <ul>
+                <li class="contact_info_item">
+                  <div class="contact_info_icon">
+                  <%= link_to image_tag("placeholder.svg", alt: ""), "https://www.flaticon.com/authors/lucy-g"%>
+                  </div>
+                  Blvd Libertad, 34 m05200 Arévalo
+                </li>
+                <li class="contact_info_item">
+                  <div class="contact_info_icon">
+                    <%= link_to image_tag("smartphone.svg", alt: ""), "https://www.flaticon.com/authors/lucy-g"  %>
+                  </div>
+                  0034 37483 2445 322
+                </li>
+                <li class="contact_info_item">
+                  <div class="contact_info_icon">
+                    <%= link_to image_tag("envelope.svg", alt: ""), "https://www.flaticon.com/authors/lucy-g" %>
+                  </div>hello@company.com
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div id="google_map">
+            <div class="map_container">
+              <div id="map"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>

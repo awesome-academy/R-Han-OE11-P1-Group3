@@ -4,7 +4,7 @@
         <div class="row">
           <div class="col">
             <div class="section_title text-center">
-              <h1>Subscribe to newsletter</h1>
+              <h1><%= t ".sub_new" %></h1>
             </div>
           </div>
         </div>
@@ -14,7 +14,7 @@
               <form action="post">
                 <div class="newsletter_form d-flex flex-md-row flex-column flex-xs-column align-items-center justify-content-center">
                   <input id="newsletter_email" class="newsletter_email" type="email" placeholder="Email Address" required="required" data-error="Valid email is required.">
-                  <button id="newsletter_submit" type="submit" class="newsletter_submit_btn trans_300" value="Submit">Subscribe</button>
+                  <button id="newsletter_submit" type="submit" class="newsletter_submit_btn trans_300" value="Submit"><%= t ".sub" %></button>
                 </div>
               </form>
             </div>
@@ -26,13 +26,13 @@
           <div class="col-lg-3 footer_col">
             <div class="logo_container">
               <div class="logo">
-                <span>University of Oxford</span>
+                <span><%= t ".uni" %></span>
               </div>
             </div>
-            <p class="footer_about_text">In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum, tempor lacus.</p>
+            <p class="footer_about_text"><%= t ".in" %></p>
           </div>
           <div class="col-lg-3 footer_col">
-            <div class="footer_column_title">Menu</div>
+            <div class="footer_column_title"><%= t ".menu" %></div>
             <div class="footer_column_content">
               <ul>
                 <li class="menu_item menu_mm"><%= link_to "Home", root_path %></li>
@@ -44,19 +44,19 @@
             </div>
           </div>
           <div class="col-lg-3 footer_col">
-            <div class="footer_column_title">Usefull Links</div>
+            <div class="footer_column_title"><%= t ".use" %></div>
             <div class="footer_column_content">
               <ul>
-                <li class="footer_list_item"><a href="#">Testimonials</a></li>
-                <li class="footer_list_item"><a href="#">FAQ</a></li>
-                <li class="footer_list_item"><a href="#">Community</a></li>
-                <li class="footer_list_item"><a href="#">Campus Pictures</a></li>
-                <li class="footer_list_item"><a href="#">Tuitions</a></li>
+                <li class="footer_list_item"><a href="#"><%= t ".tes" %></a></li>
+                <li class="footer_list_item"><a href="#"><%= t ".faq" %></a></li>
+                <li class="footer_list_item"><a href="#"><%= t ".com" %></a></li>
+                <li class="footer_list_item"><a href="#"><%= t ".cam" %></a></li>
+                <li class="footer_list_item"><a href="#"><%= t ".tui" %></a></li>
               </ul>
             </div>
           </div>
           <div class="col-lg-3 footer_col">
-            <div class="footer_column_title">Contact</div>
+            <div class="footer_column_title"><%= t ".contact" %></div>
             <div class="footer_column_content">
               <ul>
                 <li class="footer_contact_item">
@@ -83,7 +83,7 @@
       </div>
       <div class="footer_bar d-flex flex-column flex-sm-row align-items-center">
         <div class="footer_copyright">
-          <span>Copyright &copy;2018 All rights reserved | This template is made by <a href="https://colorlib.com" target="_blank">Colorlib</a></span>
+          <span><%= t ".copy" %> &copy;<%= t ".right" %><a href="https://colorlib.com" target="_blank">Colorlib</a></span>
         </div>
       </div>
   </div>

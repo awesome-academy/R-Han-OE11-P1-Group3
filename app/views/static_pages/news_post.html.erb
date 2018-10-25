@@ -9,7 +9,7 @@
       <div class="home_background prlx" style="background-image"><%= link_to image_tag("news_background.jpg", alt: "") %></div>
     </div>
     <div class="home_content">
-      <h1>The News</h1>
+      <h1><%= t ".the" %></h1>
     </div>
   </div>
   <div class="news">
@@ -25,31 +25,31 @@
                 <div class="news_post_date_container">
                   <div class="news_post_date d-flex flex-column align-items-center justify-content-center">
                     <div>18</div>
-                    <div>dec</div>
+                    <div><%= t ".month" %></div>
                   </div>
                 </div>
                 <div class="news_post_title_container">
                   <div class="news_post_title">
-                    <a href="news_post.html">Why do you need a qualification?</a>
+                    <a href="news_post.html"><%= t ".why" %></a>
                   </div>
                   <div class="news_post_meta">
-                    <span class="news_post_author"><a href="#">By Christian Smith</a></span>
+                    <span class="news_post_author"><a href="#"><%= t ".by" %></a></span>
                     <span>|</span>
-                    <span class="news_post_comments"><a href="#">3 Comments</a></span>
+                    <span class="news_post_comments"><a href="#"><%= t ".cmt" %></a></span>
                   </div>
                 </div>
               </div>
               <div class="news_post_text">
-                <p>In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum. Etiam eu purus nec eros varius luctus. Praesent finibus risus facilisis ultricies. Etiam eu purus nec eros varius luctus. Praesent finibus risus facilisis ultricies venenatis. Suspendisse fermentum sodales lacus, lacinia gravida elit dapibus sed. Cras in lectus elit. Maecenas tempus nunc vitae mi egestas venenatis. Aliquam rhoncus, purus in vehicula porttitor, lacus ante consequat purus, id elementum enim purus nec enim. In sed odio rhoncus, tristique ipsum id, pharetra neque. </p>
+                <p><%= t ".in" %></p>
               </div>
               <div class="news_post_quote">
-                <p class="news_post_quote_text"><span>E</span>tiam eu purus nec eros varius luctus. Praesent finibus risus facilisis ultricies venena tis. Suspendisse fermentum sodales lacus, lacinia gravida elit.</p>
+                <p class="news_post_quote_text">&nbsp;<span><%= t ".e" %>E</span>&nbsp;<%= t ".tiam" %></p>
               </div>
-              <p class="news_post_text" style="margin-top: 59px;">In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum. Etiam eu purus nec eros varius luctus. Praesent finibus risus facilisis ultricies. Etiam eu purus nec eros varius luctus. Praesent finibus risus facilisis ultricies venenatis. Suspendisse fermentum sodales lacus, lacinia gravida elit dapibus sed. Cras in lectus elit. Maecenas tempus nunc vitae mi egestas venenatis. Aliquam rhoncus, purus in vehicula porttitor, lacus ante consequat purus, id elementum enim purus nec enim. In sed odio rhoncus, tristique ipsum id, pharetra neque. </p>
+              <p class="news_post_text" style="margin-top: 59px;"><%= t ".in" %> </p>
             </div>
           </div>
           <div class="news_post_comments">
-            <div class="comments_title">Comments</div>
+            <div class="comments_title"><%= t ".cmt" %></div>
             <ul class="comments_list">
               <li class="comment">
                 <div class="comment_container d-flex flex-row">
@@ -62,11 +62,11 @@
                     <div class="comment_meta">
                       <span class="comment_name"><a href="#">Mark Smith</a></span>
                       <span class="comment_separator">|</span>
-                      <span class="comment_date">Dec 18, 2017</span>
+                      <span class="comment_date"><%= t ".date" %></span>
                       <span class="comment_separator">|</span>
-                      <span class="comment_reply_link"><a href="#">Reply</a></span>
+                      <span class="comment_reply_link"><a href="#"><%= t ".rep" %></a></span>
                     </div>
-                    <p class="comment_text">Aliquam rhoncus, purus in vehicula porttitor, lacus ante consequat purus, id elementum enim purus nec enim. In sed odio rhoncus, tristique ipsum id, pharetra neque. </p>
+                    <p class="comment_text"><%= t ".ali" %> </p>
                   </div>
                 </div>
               </li>
@@ -79,13 +79,13 @@
                   </div>
                   <div class="comment_content">
                     <div class="comment_meta">
-                      <span class="comment_name"><a href="#">Mark Smith</a></span>
+                      <span class="comment_name"><a href="#"><%= t ".mark" %>Mark Smith</a></span>
                       <span class="comment_separator">|</span>
-                      <span class="comment_date">Dec 18, 2017</span>
+                      <span class="comment_date"><%= t ".date" %></span>
                       <span class="comment_separator">|</span>
-                      <span class="comment_reply_link"><a href="#">Reply</a></span>
+                      <span class="comment_reply_link"><a href="#"><%= t ".rep" %></a></span>
                     </div>
-                    <p class="comment_text">Aliquam rhoncus, purus in vehicula porttitor, lacus ante consequat purus, id elementum enim purus nec enim. In sed odio rhoncus, tristique ipsum id, pharetra neque. </p>
+                    <p class="comment_text"><%= t ".ali" %> </p>
                   </div>
                 </div>
               </li>
@@ -93,13 +93,13 @@
             </ul>
           </div>
           <div class="leave_comment">
-            <div class="leave_comment_title">Leave a comment</div>
+            <div class="leave_comment_title"><%= t ".leave" %></div>
             <div class="leave_comment_form_container">
               <form action="post">
                 <input id="comment_form_name" class="input_field contact_form_name" type="text" placeholder="Name" required="required" data-error="Name is required.">
                 <input id="comment_form_email" class="input_field contact_form_email" type="email" placeholder="E-mail" required="required" data-error="Valid email is required.">
                 <textarea id="comment_form_message" class="text_field contact_form_message" name="message" placeholder="Message" required="required" data-error="Please, write us a message."></textarea>
-                <button id="comment_send_btn" type="submit" class="comment_send_btn trans_200" value="Submit">send message</button>
+                <button id="comment_send_btn" type="submit" class="comment_send_btn trans_200" value="Submit"><%= t ".send" %></button>
               </form>
             </div>
           </div>
@@ -108,52 +108,52 @@
           <div class="sidebar">
             <div class="sidebar_section">
               <div class="sidebar_section_title">
-                <h3>Archives</h3>
+                <h3><%= t ".archi" %></h3>
               </div>
               <ul class="sidebar_list">
-                <li class="sidebar_list_item"><a href="#">Design Courses</a></li>
-                <li class="sidebar_list_item"><a href="#">All you need to know</a></li>
-                <li class="sidebar_list_item"><a href="#">Uncategorized</a></li>
-                <li class="sidebar_list_item"><a href="#">About Our Departments</a></li>
-                <li class="sidebar_list_item"><a href="#">Choose the right course</a></li>
+                <li class="sidebar_list_item"><a href="#"><%= t ".design" %>Design Courses</a></li>
+                <li class="sidebar_list_item"><a href="#"><%= t ".all" %></a></li>
+                <li class="sidebar_list_item"><a href="#"><%= t ".un" %></a></li>
+                <li class="sidebar_list_item"><a href="#"><%= t ".ab" %></a></li>
+                <li class="sidebar_list_item"><a href="#"><%= t ".choo" %></a></li>
               </ul>
             </div>
             <div class="sidebar_section">
               <div class="sidebar_section_title">
-                <h3>Latest posts</h3>
+                <h3><%= t ".la" %></h3>
               </div>
               <div class="latest_posts">
                 <div class="latest_post">
                   <div class="latest_post_image">
                     <%= link_to image_tag("latest_1.jpg", alt: ""), "https://unsplash.com/@dsmacinnes" %>
                   </div>
-                  <div class="latest_post_title"><a href="news_post.html">Why do you need a qualification?</a></div>
+                  <div class="latest_post_title"><a href="news_post.html"><%= t ".why" %></a></div>
                   <div class="latest_post_meta">
-                    <span class="latest_post_author"><a href="#">By Christian Smith</a></span>
+                    <span class="latest_post_author"><a href="#"><%= t ".by" %></a></span>
                     <span>|</span>
-                    <span class="latest_post_comments"><a href="#">3 Comments</a></span>
+                    <span class="latest_post_comments"><a href="#"><%= t ".cmt" %></a></span>
                   </div>
                 </div>
                 <div class="latest_post">
                   <div class="latest_post_image">
                     <%= link_to image_tag("latest_2.jpg", alt: ""), "https://unsplash.com/@erothermel" %>
                   </div>
-                  <div class="latest_post_title"><a href="news_post.html">Why do you need a qualification?</a></div>
+                  <div class="latest_post_title"><a href="news_post.html"><%= t ".why" %></a></div>
                   <div class="latest_post_meta">
-                    <span class="latest_post_author"><a href="#">By Christian Smith</a></span>
+                    <span class="latest_post_author"><a href="#"><%= t ".by" %></a></span>
                     <span>|</span>
-                    <span class="latest_post_comments"><a href="#">3 Comments</a></span>
+                    <span class="latest_post_comments"><a href="#"><%= t ".cmt" %></a></span>
                   </div>
                 </div>
                 <div class="latest_post">
                   <div class="latest_post_image">
                     <%= link_to image_tag("latest_3.jpg", alt: ""), "https://unsplash.com/@element5digital" %>
                   </div>
-                  <div class="latest_post_title"><a href="news_post.html">Why do you need a qualification?</a></div>
+                  <div class="latest_post_title"><a href="news_post.html"><%= t ".why" %></a></div>
                   <div class="latest_post_meta">
-                    <span class="latest_post_author"><a href="#">By Christian Smith</a></span>
+                    <span class="latest_post_author"><a href="#"><%= t ".by" %></a></span>
                     <span>|</span>
-                    <span class="latest_post_comments"><a href="#">3 Comments</a></span>
+                    <span class="latest_post_comments"><a href="#"><%= t ".cmt" %></a></span>
                   </div>
                 </div>
               </div>
@@ -163,12 +163,12 @@
                 <h3>Tags</h3>
               </div>
               <div class="tags d-flex flex-row flex-wrap">
-                <div class="tag"><a href="#">Course</a></div>
-                <div class="tag"><a href="#">Design</a></div>
-                <div class="tag"><a href="#">FAQ</a></div>
-                <div class="tag"><a href="#">Teachers</a></div>
-                <div class="tag"><a href="#">School</a></div>
-                <div class="tag"><a href="#">Graduate</a></div>
+                <div class="tag"><a href="#"><%= t ".course" %></a></div>
+                <div class="tag"><a href="#"><%= t ".design" %></a></div>
+                <div class="tag"><a href="#"><%= t ".faq" %></a></div>
+                <div class="tag"><a href="#"><%= t ".teacher" %></a></div>
+                <div class="tag"><a href="#"><%= t ".school" %></a></div>
+                <div class="tag"><a href="#"><%= t ".gradute" %></a></div>
               </div>
             </div>
           </div>

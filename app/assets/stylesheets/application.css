@@ -1,4 +1,17 @@
-/*
- *= require_tree .
- *= require_self
- */
+/**= require animate.css
+ *= require bootstrap.min.css
+ *= require contact_responsive.scss
+ *= require contact_styles.scss
+ *= require fontawesome-all.css
+ *= require main_styles.scss
+ *= require news_post_responsive.scss
+ *= require news_post_styles.scss
+ *= require news_responsive.scss
+ *= require news_styles.scss
+ *= require owl.carousel.scss
+ *= require owl.theme.default.scss
+ *= require responsive.scss
+ *= require teachers_responsive.scss
+ *= require teachers_styles.scss
+ *= require courses_styles.scss
+ *= require courses_responsive.scss*/

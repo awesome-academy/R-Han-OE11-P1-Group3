@@ -1,0 +1,79 @@
+<div class="super_container">
+  <div class="menu_container menu_mm">
+    <div class="menu_close_container">
+      <div class="menu_close"></div>
+    </div>
+  </div>
+  <div class="home">
+    <div class="home_background_container prlx_parent">
+      <div class="home_background prlx" style="background-image"><%= link_to image_tag("slider_background.jpg", alt: "") %></div>
+    </div>
+    <div class="home_content">
+      <h1>Sign Up</h1>
+    </div>
+  </div>
+  <div class="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="contact_form">
+            <div class="contact_title"><%= t ".signup" %></div>
+            <div class="contact_form_container">
+              <div class="name-group">
+                <%= form_for(@user) do |f| %>
+                <%= render 'shared/error_messages' %>
+                <%= f.label :username %>
+                <%= f.text_field :username, class: 'form-control' %>
+                <%= f.label :email %>
+                <%= f.email_field :email, class: 'form-control' %>
+                <%= f.label :password %>
+                <%= f.password_field :password, class: 'form-control' %>                  <%= f.label :password_confirmation, "Confirmation" %>
+                <%= f.password_field :password_confirmation, class: 'form-control' %>
+                <%= f.submit "Create my account", class: "contact_send_btn trans_200" %>
+                  <% end %>
+              </div>
+                  <span><%= t ".al" %></span><%= link_to "Login", sessions_new_path %>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="about">
+            <div class="about_title"><%= t ".join" %></div>
+            <p class="about_text"><%= t ".in" %></p>
+            <div class="contact_info">
+              <ul>
+                <li class="contact_info_item">
+                  <div class="contact_info_icon">
+                  <%= link_to image_tag("placeholder.svg", alt: ""), "https://www.flaticon.com/authors/lucy-g"%>
+                  </div>
+                  Blvd Libertad, 34 m05200 Arévalo
+                </li>
+                <li class="contact_info_item">
+                  <div class="contact_info_icon">
+                    <%= link_to image_tag("smartphone.svg", alt: ""), "https://www.flaticon.com/authors/lucy-g"  %>
+                  </div>
+                  0034 37483 2445 322
+                </li>
+                <li class="contact_info_item">
+                  <div class="contact_info_icon">
+                    <%= link_to image_tag("envelope.svg", alt: ""), "https://www.flaticon.com/authors/lucy-g" %>
+                  </div>hello@company.com
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div id="google_map">
+            <div class="map_container">
+              <div id="map"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>

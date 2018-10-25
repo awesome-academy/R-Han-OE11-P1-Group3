@@ -11,7 +11,7 @@
           <div class="hero_slide_background" style="background-image"><%= link_to image_tag("slider_background.jpg", alt: "") %></div>
           <div class="hero_slide_container d-flex flex-column align-items-center justify-content-center">
             <div class="hero_slide_content text-center">
-              <h1 data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut">Get your <span>Education</span> today!</h1>
+              <h1 data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut"><%= t ".get" %>&nbsp;<span><%= t ".education" %></span>&nbsp;<%= t ".today" %></h1>
             </div>
           </div>
         </div>
@@ -19,7 +19,7 @@
           <div class="hero_slide_background" style="background-image"><%= link_to image_tag("slider_background.jpg", alt: "") %></div>
           <div class="hero_slide_container d-flex flex-column align-items-center justify-content-center">
             <div class="hero_slide_content text-center">
-              <h1 data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut">Get your <span>Education</span> today!</h1>
+              <h1 data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut"><%= t ".get" %>&nbsp;<span><%= t ".education" %></span>&nbsp;<%= t ".today" %></h1>
             </div>
           </div>
         </div>
@@ -27,12 +27,12 @@
           <div class="hero_slide_background" style="background-image"><%= link_to image_tag("slider_background.jpg", alt: "") %></div>
           <div class="hero_slide_container d-flex flex-column align-items-center justify-content-center">
             <div class="hero_slide_content text-center">
-              <h1 data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut">Get your <span>Education</span> today!</h1>
+              <h1 data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut"><%= t ".get" %>&nbsp;<span><%= t ".education" %></span>&nbsp;<%= t ".today" %></h1>
             </div>
           </div>
         </div>
       </div>
-      <div class="hero_slider_left hero_slider_nav trans_200"><span class="trans_200">prev</span></div>
+      <div class="hero_slider_left hero_slider_nav trans_200"><span class="trans_200">pr&nbsp;ev</span></div>
       <div class="hero_slider_right hero_slider_nav trans_200"><span class="trans_200">next</span></div>
     </div>
   </div>
@@ -44,8 +44,8 @@
             <div class="hero_box d-flex flex-row align-items-center justify-content-start">
               <%= link_to image_tag("earth-globe.svg", alt: "") %>
               <div class="hero_box_content">
-                <h2 class="hero_box_title">Online Courses</h2>
-                <a class="hero_box_link">view more</a>
+                <h2 class="hero_box_title"><%= t ".online" %></h2>
+                <a class="hero_box_link"><%= link_to t(".view"), courses_path %></a>
               </div>
             </div>
           </div>
@@ -53,8 +53,8 @@
             <div class="hero_box d-flex flex-row align-items-center justify-content-start">
               <%= link_to image_tag("books.svg", alt: "") %>
               <div class="hero_box_content">
-                <h2 class="hero_box_title">Our Library</h2>
-                <a href="courses.html.erb" class="hero_box_link">view more</a>
+                <h2 class="hero_box_title"><%= t ".ourl" %></h2>
+                <a class="hero_box_link"><%= link_to t(".view"), courses_path %></a>
               </div>
             </div>
           </div>
@@ -62,8 +62,8 @@
             <div class="hero_box d-flex flex-row align-items-center justify-content-start">
               <%= link_to image_tag("professor.svg", alt: "") %>
               <div class="hero_box_content">
-                <h2 class="hero_box_title">Our Teachers</h2>
-                <a href="teachers.html.erb" class="hero_box_link">view more</a>
+                <h2 class="hero_box_title"><%= t ".ourt" %></h2>
+                <a class="hero_box_link"><%= link_to t(".view"), teachers_path %></a>
               </div>
             </div>
           </div>
@@ -76,7 +76,7 @@
       <div class="row">
         <div class="col">
           <div class="section_title text-center">
-            <h1>Popular Courses</h1>
+            <h1><%= t ".popular" %></h1>
           </div>
         </div>
       </div>
@@ -85,15 +85,8 @@
           <div class="card">
             <div class="card-img-top img-thumbnail"><%= link_to image_tag("course_1.jpg", alt: ""), "https://unsplash.com/@kellybrito" %></div>
             <div class="card-body text-center">
-              <div class="card-title"><a href="courses.html.erb">A complete guide to design</a></div>
-              <div class="card-text">Adobe Guide, Layes, Smart Objects etc...</div>
-            </div>
-            <div class="price_box d-flex flex-row align-items-center">
-              <div class="course_author_image">
-                <%= link_to image_tag("author.jpg", alt: ""), "https://unsplash.com/@mehdizadeh" %>
-              </div>
-              <div class="course_author_name">Michael Smith, <span>Author</span></div>
-              <div class="course_price d-flex flex-column align-items-center justify-content-center"><span>$29</span></div>
+              <div class="card-title"><%= link_to t(".why"), news_path %></div>
+              <div class="card-text"><%= t ".in" %></div>
             </div>
           </div>
         </div>
@@ -101,15 +94,8 @@
           <div class="card">
             <div class="card-img-top"><%= link_to image_tag("course_2.jpg", alt: ""), "https://unsplash.com/@cikstefan" %></div>
             <div class="card-body text-center">
-              <div class="card-title"><a href="courses.html.erb">Beginners guide to HTML</a></div>
-              <div class="card-text">Adobe Guide, Layes, Smart Objects etc...</div>
-            </div>
-            <div class="price_box d-flex flex-row align-items-center">
-              <div class="course_author_image">
-                <%= link_to image_tag("author.jpg", alt: ""), "https://unsplash.com/@mehdizadeh" %>
-              </div>
-              <div class="course_author_name">Michael Smith, <span>Author</span></div>
-              <div class="course_price d-flex flex-column align-items-center justify-content-center"><span>$29</span></div>
+              <div class="card-title"><%= link_to t(".why"), news_path %></div>
+              <div class="card-text"><%= t ".in" %></div>
             </div>
           </div>
         </div>
@@ -117,15 +103,8 @@
           <div class="card">
             <div class="card-img-top"><%= link_to image_tag("course_3.jpg", alt: ""), "https://unsplash.com/@dsmacinnes" %></div>
             <div class="card-body text-center">
-              <div class="card-title"><a href="courses.html.erb">Advanced Photoshop</a></div>
-              <div class="card-text">Adobe Guide, Layes, Smart Objects etc...</div>
-            </div>
-            <div class="price_box d-flex flex-row align-items-center">
-              <div class="course_author_image">
-                <%= link_to image_tag("author.jpg", alt: ""), "https://unsplash.com/@mehdizadeh" %>
-              </div>
-              <div class="course_author_name">Michael Smith, <span>Author</span></div>
-              <div class="course_price d-flex flex-column align-items-center justify-content-center"><span>$29</span></div>
+              <div class="card-title"><%= link_to t(".why"), news_path %></div>
+              <div class="card-text"><%= t ".in" %></div>
             </div>
           </div>
         </div>
@@ -138,9 +117,9 @@
         <div class="col-lg-6 nopadding">
           <div class="register_section d-flex flex-column align-items-center justify-content-center">
             <div class="register_content text-center">
-              <h1 class="register_title">Register now and get a discount <span>50%</span> discount until 1 January</h1>
-              <p class="register_text">In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum. Aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempo.</p>
-              <div class="button button_1 register_button mx-auto trans_200"><a href="#">register now</a></div>
+              <h1 class="register_title"><%= t ".res" %>&nbsp;<span>50%</span>&nbsp;<%= t ".discount" %></h1>
+              <p class="register_text"><%= t ".in_ali" %></p>
+              <div class="button button_1 register_button mx-auto trans_200"><a href="#"><%= t ".res_now" %></a></div>
             </div>
           </div>
         </div>
@@ -148,12 +127,12 @@
           <div class="search_section d-flex flex-column align-items-center justify-content-center">
             <div class="search_background" style="background-image"><%= link_to image_tag("search_background.jpg", alt: "") %></div>
             <div class="search_content text-center">
-              <h1 class="search_title">Search for your course</h1>
+              <h1 class="search_title"><%= t ".search" %></h1>
               <form id="search_form" class="search_form" action="post">
                 <input id="search_form_name" class="input_field search_form_name" type="text" placeholder="Course Name" required="required" data-error="Course name is required.">
                 <input id="search_form_category" class="input_field search_form_category" type="text" placeholder="Category">
                 <input id="search_form_degree" class="input_field search_form_degree" type="text" placeholder="Degree">
-                <button id="search_submit_button" type="submit" class="search_submit_button trans_200" value="Submit">search course</button>
+                <button id="search_submit_button" type="submit" class="search_submit_button trans_200" value="Submit"><%= t "search_course" %></button>
               </form>
             </div>
           </div>
@@ -166,7 +145,7 @@
       <div class="row">
         <div class="col">
           <div class="section_title text-center">
-            <h1>Our Services</h1>
+            <h1><%= t ".ours" %></h1>
           </div>
         </div>
       </div>
@@ -175,43 +154,43 @@
           <div class="icon_container">
             <%= link_to image_tag("earth-globe.svg", alt: "") %>
           </div>
-          <h3>Online Courses</h3>
-          <p>In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum.</p>
+          <h3><%= t ".online" %></h3>
+          <p><%= t ".in_ali" %></p>
         </div>
         <div class="col-lg-4 service_item text-left d-flex flex-column align-items-start justify-content-start">
           <div class="icon_container">
             <%= link_to image_tag("exam.svg", alt: "") %>
           </div>
-          <h3>Indoor Courses</h3>
-          <p>In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum.</p>
+          <h3><%= t ".indoor" %></h3>
+          <p><%= t ".in_ali" %></p>
         </div>
         <div class="col-lg-4 service_item text-left d-flex flex-column align-items-start justify-content-start">
           <div class="icon_container">
             <%= link_to image_tag("books.svg", alt: "") %>
           </div>
-          <h3>Amazing Library</h3>
-          <p>In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum.</p>
+          <h3><%= t ".amazing" %></h3>
+          <p><%= t ".in_ali" %></p>
         </div>
         <div class="col-lg-4 service_item text-left d-flex flex-column align-items-start justify-content-start">
           <div class="icon_container">
             <%= link_to image_tag("professor.svg", alt: "") %>
           </div>
-          <h3>Exceptional Professors</h3>
-          <p>In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum.</p>
+          <h3><%= t ".exception" %></h3>
+          <p><%= t ".in_ali" %></p>
         </div>
         <div class="col-lg-4 service_item text-left d-flex flex-column align-items-start justify-content-start">
           <div class="icon_container">
             <%= link_to image_tag("blackboard.svg", alt: "") %>
           </div>
-          <h3>Top Programs</h3>
-          <p>In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum.</p>
+          <h3><%= t ".top" %></h3>
+          <p><%= t ".in_ali" %></p>
         </div>
         <div class="col-lg-4 service_item text-left d-flex flex-column align-items-start justify-content-start">
           <div class="icon_container">
             <%= link_to image_tag("mortarboard.svg", alt: "") %>
           </div>
-          <h3>Graduate Diploma</h3>
-          <p>In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum.</p>
+          <h3><%= t ".graduate" %></h3>
+          <p><%= t ".in_ali" %></p>
         </div>
       </div>
     </div>
@@ -224,7 +203,7 @@
       <div class="row">
         <div class="col">
           <div class="section_title text-center">
-            <h1>What our students say</h1>
+            <h1><%= t ".what" %></h1>
           </div>
         </div>
       </div>
@@ -235,39 +214,39 @@
               <div class="owl-item">
                 <div class="testimonials_item text-center">
                   <div class="quote">“</div>
-                  <p class="testimonials_text">In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum.In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum.</p>
+                  <p class="testimonials_text"><%= t ".in_aliq" %></p>
                   <div class="testimonial_user">
                     <div class="testimonial_image mx-auto">
                       <%= link_to image_tag("testimonials_user.jpg", alt: "") %>
                     </div>
-                    <div class="testimonial_name">james cooper</div>
-                    <div class="testimonial_title">Graduate Student</div>
+                    <div class="testimonial_name"><%= t ".james" %></div>
+                    <div class="testimonial_title"><%= t ".gra" %></div>
                   </div>
                 </div>
               </div>
               <div class="owl-item">
                 <div class="testimonials_item text-center">
                   <div class="quote">“</div>
-                  <p class="testimonials_text">In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum.In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum.</p>
+                  <p class="testimonials_text"><%= t ".in_aliq" %></p>
                   <div class="testimonial_user">
                     <div class="testimonial_image mx-auto">
                       <%= link_to image_tag("testimonials_user.jpg", alt: "") %>
                     </div>
-                    <div class="testimonial_name">james cooper</div>
-                    <div class="testimonial_title">Graduate Student</div>
+                    <div class="testimonial_name"><%= t ".james" %></div>
+                    <div class="testimonial_title"><%= t ".gra" %></div>
                   </div>
                 </div>
               </div>
               <div class="owl-item">
                 <div class="testimonials_item text-center">
                   <div class="quote">“</div>
-                  <p class="testimonials_text">In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum.In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum.</p>
+                  <p class="testimonials_text"><%= t ".in_aliq" %></p>
                   <div class="testimonial_user">
                     <div class="testimonial_image mx-auto">
                       <%= link_to image_tag("testimonials_user.jpg", alt: "") %>
                     </div>
-                    <div class="testimonial_name">james cooper</div>
-                    <div class="testimonial_title">Graduate Student</div>
+                    <div class="testimonial_name"><%= t ".james" %></div>
+                    <div class="testimonial_title"><%= t ".gra" %></div>
                   </div>
                 </div>
               </div>
@@ -282,7 +261,7 @@
       <div class="row">
         <div class="col">
           <div class="section_title text-center">
-            <h1>Upcoming Events</h1>
+            <h1><%= t ".up" %></h1>
           </div>
         </div>
       </div>
@@ -293,14 +272,14 @@
               <div class="col-lg-2 order-lg-1 order-2">
                 <div class="event_date d-flex flex-column align-items-center justify-content-center">
                   <div class="event_day">07</div>
-                  <div class="event_month">January</div>
+                  <div class="event_month"><%= t ".month" %></div>
                 </div>
               </div>
               <div class="col-lg-6 order-lg-2 order-3">
                 <div class="event_content">
-                  <div class="event_name"><a class="trans_200" href="#">Student Festival</a></div>
-                  <div class="event_location">Grand Central Park</div>
-                  <p>In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor.</p>
+                  <div class="event_name"><a class="trans_200" href="#"><%= t ".stu_fes" %></a></div>
+                  <div class="event_location"><%= t ".grand" %></div>
+                  <p><%= t ".in_ali" %></p>
                 </div>
               </div>
               <div class="col-lg-4 order-lg-3 order-1">
@@ -316,15 +295,15 @@
             <div class="row d-flex flex-row align-items-end">
               <div class="col-lg-2 order-lg-1 order-2">
                 <div class="event_date d-flex flex-column align-items-center justify-content-center">
-                  <div class="event_day">07</div>
-                  <div class="event_month">January</div>
+                  <div class="event_day"><%= t ".day" %></div>
+                  <div class="event_month"><%= t ".month" %></div>
                 </div>
               </div>
               <div class="col-lg-6 order-lg-2 order-3">
                 <div class="event_content">
-                  <div class="event_name"><a class="trans_200" href="#">Open day in the Univesrsity campus</a></div>
-                  <div class="event_location">Grand Central Park</div>
-                  <p>In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor.</p>
+                  <div class="event_name"><a class="trans_200" href="#"><%= t ".open" %></a></div>
+                  <div class="event_location"><%= t ".grand" %></div>
+                  <p><%= t ".in_ali" %></p>
                 </div>
               </div>
               <div class="col-lg-4 order-lg-3 order-1">
@@ -340,15 +319,15 @@
             <div class="row d-flex flex-row align-items-end">
               <div class="col-lg-2 order-lg-1 order-2">
                 <div class="event_date d-flex flex-column align-items-center justify-content-center">
-                  <div class="event_day">07</div>
-                  <div class="event_month">January</div>
+                  <div class="event_day"><%= t ".day" %></div>
+                  <div class="event_month"><%= t ".month" %></div>
                 </div>
               </div>
               <div class="col-lg-6 order-lg-2 order-3">
                 <div class="event_content">
-                  <div class="event_name"><a class="trans_200" href="#">Student Graduation Ceremony</a></div>
-                  <div class="event_location">Grand Central Park</div>
-                  <p>In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor.</p>
+                  <div class="event_name"><a class="trans_200" href="#"><%= t ".stu_gra" %></a></div>
+                  <div class="event_location"><%= t ".grand" %></div>
+                  <p><%= t ".in_ali" %></p>
                 </div>
               </div>
               <div class="col-lg-4 order-lg-3 order-1">
