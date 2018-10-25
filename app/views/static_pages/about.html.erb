@@ -11,12 +11,12 @@
       </div>
     </div>
     <div class="home_content">
-      <h1>About us</h1>
+      <h1><%= t ".about" %></h1>
     </div>
   </div>
   <div class="aboutus">
-    <div class="about_title" align="center">About the University of Oxford</div>
-    <p class="about_text">Oxford is a world-leading centre of learning, teaching and research and the oldest university in the English-speaking world.</p>
+    <div class="about_title" align="center"><%= t ".about_the" %></div>
+    <p class="about_text"><%= t ".ox" %></p>
     <%= link_to image_tag("about.jpg", alt: "") %>
     <div class="contact_info">
       <ul>
@@ -24,18 +24,18 @@
           <div class="contact_info_icon">
           <%= link_to image_tag("placeholder.svg", alt: ""), "https://www.flaticon.com/authors/lucy-g"%>
           </div>
-          Blvd Libertad, 34 m05200 Arévalos
+          <%= t ".bl" %>
         </li>
         <li class="contact_info_item">
           <div class="contact_info_icon">
             <%= link_to image_tag("smartphone.svg", alt: ""), "https://www.flaticon.com/authors/lucy-g"  %>
           </div>
-          0034 37483 2445 322
+          <%= t ".phone" %>
         </li>
         <li class="contact_info_item">
           <div class="contact_info_icon">
             <%= link_to image_tag("envelope.svg", alt: ""), "https://www.flaticon.com/authors/lucy-g" %>
-          </div>hello@company.com
+          </div><%= t ".hello" %>
         </li>
       </ul>
     </div>
