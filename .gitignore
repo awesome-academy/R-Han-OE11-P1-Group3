@@ -35,3 +35,6 @@
 config/credentials.yml.en
 database.yml
 storage.yml
+config/settings.local.yml
+config/settings/*.local.yml
+config/environments/*.local.yml

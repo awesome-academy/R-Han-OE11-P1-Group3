@@ -12,4 +12,8 @@ class StaticPagesController < ApplicationController
   def news_post; end
 
   def teachers; end
+
+  def login; end
+
+  def signup; end
 end

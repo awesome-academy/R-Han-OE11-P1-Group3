@@ -1,4 +1,4 @@
-<%= t ".hello" %><div class="super_container">
+<div class="super_container">
   <div class="menu_container menu_mm">
     <div class="menu_close_container">
       <div class="menu_close"></div>
@@ -9,7 +9,7 @@
       <div class="home_background prlx" style="background-image"><%= link_to image_tag("slider_background.jpg", alt: "") %></div>
     </div>
     <div class="home_content">
-      <h1><%= t ".contact" %></h1>
+      <h1>Sign Up</h1>
     </div>
   </div>
   <div class="contact">
@@ -17,14 +17,23 @@
       <div class="row">
         <div class="col-lg-8">
           <div class="contact_form">
-            <div class="contact_title"><%= t ".get" %></div>
+            <div class="contact_title"><%= t ".signup" %></div>
             <div class="contact_form_container">
-              <form action="post">
-                <input id="contact_form_name" class="input_field contact_form_name" type="text" placeholder="Name" required="required" data-error="Name is required.">
-                <input id="contact_form_email" class="input_field contact_form_email" type="email" placeholder="E-mail" required="required" data-error="Valid email is required.">
-                <textarea id="contact_form_message" class="text_field contact_form_message" name="message" placeholder="Message" required="required" data-error="Please, write us a message."></textarea>
-                <button id="contact_send_btn" type="button" class="contact_send_btn trans_200" value="Submit"><%= t ".send" %></button>
-              </form>
+              <div class="name-group">
+                <%= form_for(@user) do |f| %>
+                <%= render 'shared/error_messages' %>
+                <%= f.label :username %>
+                <%= f.text_field :username, class: 'form-control' %>
+                <%= f.label :email %>
+                <%= f.email_field :email, class: 'form-control' %>
+                <%= f.label :password %>
+                <%= f.password_field :password, class: 'form-control' %>
+                <%= f.label :password_confirmation, "Confirmation" %>
+                <%= f.password_field :password_confirmation, class: 'form-control' %>
+                <%= f.submit "Create my account", class: "contact_send_btn trans_200" %>
+                  <% end %>
+              </div>
+                  <span><%= t ".al" %></span><%= link_to "Login", sessions_new_path %>
             </div>
           </div>
         </div>
@@ -49,7 +58,7 @@
                 <li class="contact_info_item">
                   <div class="contact_info_icon">
                     <%= link_to image_tag("envelope.svg", alt: ""), "https://www.flaticon.com/authors/lucy-g" %>
-                  hello@company.com
+                  </div>hello@company.com
                 </li>
               </ul>
             </div>
@@ -68,3 +77,4 @@
     </div>
   </div>
 </div>
+</body>
