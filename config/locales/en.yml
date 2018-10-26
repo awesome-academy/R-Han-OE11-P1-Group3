@@ -11,7 +11,6 @@ en:
       why: "Why do you need a qualification?"
       in: "In aliquam, augue a gravida rutrum, an..."
       res: "Register now and get a discount"
-      dis: "50%"
       discount: "discount until 1 January"
       in_ali: "In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum. Aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempo."
       res_now: "register now"
@@ -29,7 +28,6 @@ en:
       james: "james cooper"
       gra: "Graduate Student"
       up: "Upcoming Events"
-      day: "07"
       month: "January"
       stu_fes: "Student Festival"
       grand: "Grand Central Park"
@@ -40,25 +38,17 @@ en:
       about: "About us"
       about_the: "About the University of Oxford"
       ox: "Oxford is a world-leading centre of learning, teaching and research and the oldest university in the English-speaking world."
-      bl: "Blvd Libertad, 34 m05200 Arévalos"
-      phone: "0034 37483 2445 322"
-      hello: "hello@company.com"
     contact:
       contact: "Contact"
       get: "Get in touch"
       send: "send message"
       join: "Join Courses"
       in: "In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum. Etiam eu purus nec eros varius luctus. Praesent finibus risus facilisis ultricies. Etiam eu purus nec eros varius luctus."
-      bl: "Blvd Libertad, 34 m05200 Arévalo"
-      phone: "0034 37483 2445 322"
-      hello: "hello@company.com"
     courses:
       course: "Courses"
       popular: "Popular Courses"
       a: "A complete guide to design"
       adobe: "Adobe Guide, Layes, Smart Objects etc..."
-      mic: "Michael Smith"
-      money: "$29"
       begin: "Beginners guide to HTML"
       ad: "Advanced Photoshop"
     news:
@@ -143,8 +133,21 @@ en:
       cam: "Campus Pictures"
       tui: "Tuitions"
       contact: "Contact"
-      bl: "Blvd Libertad, 34 m05200 Arévalo"
       copy: "Copyright"
       right: "2018 All rights reserved | This template is made by "
+  sessions:
+    new:
+      login: "Login"
+      remember: "Remember me"
+      don't: "Don't have an account yet ? Create an account."
+      join: "Join Courses"
+      in: "In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum. Etiam eu purus nec eros varius luctus. Praesent finibus risus facilisis ultricies. Etiam eu purus nec eros varius luctus."
+  users:
+    new:
+      signup: "Sign Up"
+      al: "Already have an account?"
+      join: "Join Courses"
+      in: "In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum. Etiam eu purus nec eros varius luctus. Praesent finibus risus facilisis ultricies. Etiam eu purus nec eros varius luctus."
+
 
 
