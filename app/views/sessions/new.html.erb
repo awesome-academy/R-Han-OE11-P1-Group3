@@ -9,7 +9,7 @@
       <div class="home_background prlx" style="background-image"><%= link_to image_tag("slider_background.jpg", alt: "") %></div>
     </div>
     <div class="home_content">
-      <h1><%= t ".contact" %></h1>
+      <h1><%= t ".login" %></h1>
     </div>
   </div>
   <div class="contact">
@@ -17,13 +17,14 @@
       <div class="row">
         <div class="col-lg-8">
           <div class="contact_form">
-            <div class="contact_title"><%= t ".get" %></div>
+            <div class="contact_title"><%= t ".login" %></div>
             <div class="contact_form_container">
               <form action="post">
-                <input id="contact_form_name" class="input_field contact_form_name" type="text" placeholder="Name" required="required" data-error="Name is required.">
-                <input id="contact_form_email" class="input_field contact_form_email" type="email" placeholder="E-mail" required="required" data-error="Valid email is required.">
-                <textarea id="contact_form_message" class="text_field contact_form_message" name="message" placeholder="Message" required="required" data-error="Please, write us a message."></textarea>
-                <button id="contact_send_btn" type="button" class="contact_send_btn trans_200" value="Submit"><%= t ".send" %></button>
+                <input id="contact_form_name" class="input_field contact_form_name" type="text" placeholder="Username" required="required" data-error="Name is required.">
+                <input id="contact_form_email" class="input_field contact_form_email" type="email" placeholder="Password" required="required" data-error="Valid email is required.">
+                <input type="checkbox" checked="checked" name="remember"><%= t ".remember" %>
+                <button id="contact_send_btn" type="button" class="contact_send_btn trans_200" value="Submit"><%= t ".login" %></button>
+                 <span><%= t ".don't" %></span><%= link_to "register", register_path %></li>
               </form>
             </div>
           </div>
@@ -49,7 +50,7 @@
                 <li class="contact_info_item">
                   <div class="contact_info_icon">
                     <%= link_to image_tag("envelope.svg", alt: ""), "https://www.flaticon.com/authors/lucy-g" %>
-                  hello@company.com
+                  </div>hello@company.com
                 </li>
               </ul>
             </div>
@@ -68,3 +69,4 @@
     </div>
   </div>
 </div>
+</body>
